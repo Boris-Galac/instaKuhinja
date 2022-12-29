@@ -2,9 +2,6 @@
 <html <?php language_attributes();  ?>>
 
 <head>
-    <meta charset="<?php bloginfo('charset') ?>">
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <meta name="google-site-verification" content="3DKrsbCUcm8dm9sLYAJMZ4tNRso7aVi2clbVBoalNGM" />
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -12,10 +9,17 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KTLS9W8');</script>
     <!-- End Google Tag Manager -->
+    <meta charset="<?php bloginfo('charset') ?>">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta name="google-site-verification" content="3DKrsbCUcm8dm9sLYAJMZ4tNRso7aVi2clbVBoalNGM" />
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTLS9W8"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header class="header" id="header">
         <nav class="navbar container">
             <a href="<?php echo site_url() ?>" class="logo-container">
