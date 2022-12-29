@@ -31,7 +31,7 @@
             <div class="menu" id="menu">
                 <ul class="list">
                     <li class="list-item">
-                        <a href="<?php echo site_url() ?>" class="list-link <?php if(is_front_page()) echo 'current';  ?>">Naslovnaaa</a>
+                        <a href="<?php echo site_url() ?>" class="list-link <?php if(is_front_page()) echo 'current';  ?>">Naslovnaa</a>
                     </li>
                     <li class="list-item">
                         <a href="<?php echo site_url('/blog') ?>" class="list-link  <?php if(is_blog()) echo 'current';  ?>">Blogovi</a>
