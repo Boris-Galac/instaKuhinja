@@ -1,0 +1,159 @@
+/* layout */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* contact form */
+
+.wpcf7-form {
+  display: grid;
+  gap: 1rem;
+}
+.form__label {
+  margin-bottom: 0.3rem;
+}
+.wpcf7-form input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.wpcf7-form input::placeholder {
+  color: hsla(200, 7%, 53%, 0.628);
+}
+.wpcf7-form > label {
+  position: relative;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+.wpcf7-form > label::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 100%, 0.03);
+  z-index: 2;
+  transform-origin: center;
+  transform: scale(0);
+  transition: transform 0.15s;
+  cursor: pointer;
+}
+.wpcf7-form > label:hover::after {
+  transform: scale(1);
+}
+.wpcf7-form-control-wrap {
+  width: 100%;
+  transition: 0.2s;
+}
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  color: black;
+}
+.wpcf7-text,
+.wpcf7-textarea {
+  transition: 0.2s;
+  border-radius: 2px;
+  color: #fff;
+}
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
+  background-color: hsl(208, 18%, 14%);
+  outline: 1px solid hsl(209, 71%, 47%);
+  color: white;
+}
+.submit-form-btn {
+  position: relative;
+  background-color: hsl(120, 43%, 36%);
+  padding: 0.8rem !important;
+  transition: 0.2s;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.submit-form-btn:hover {
+  background-color: hsl(120, 43%, 40%);
+  cursor: pointer;
+}
+/* personal info */
+.personal-info {
+  position: relative;
+  background-color: hsl(214deg 11% 19%);
+  border-radius: 3px;
+  padding: 1rem;
+}
+.personal-info__avatar {
+  width: 15rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  margin-top: 2rem;
+  height: max-content;
+}
+.personal-info__avatar img {
+  border: 0.5rem solid rgb(28, 34, 42);
+  border-radius: 50%;
+}
+.personal-info__socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.personal-info__socials div {
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+.personal-info__socials .link {
+  font-size: 0.8rem;
+}
+.contact-msg {
+  position: relative;
+}
+.contact-msg::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.3rem;
+  left: 0;
+  width: 20vw;
+  height: 2px;
+  background-color: hsl(0, 0%, 100%);
+}
+.personal-info__author {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  text-align: center;
+  margin-block: 1rem;
+}
+.personal-info__text {
+  text-align: center;
+  margin-block: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+.personal-info-social {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  color: #fff;
+  transition: 0.2s;
+}
+.personal-info-social:hover {
+  scale: 1.2;
+}
+.personal-info__follow {
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 700px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "food-by-dragica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "postcss src/styles/css/style.css --dir dist --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boris-Galac/Dragicin-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boris-Galac/Dragicin-blog/issues"
+  },
+  "homepage": "https://github.com/Boris-Galac/Dragicin-blog#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "postcss-import": "^14.1.0"
+  },
+  "devDependencies": {
+    "postcss-cli": "^10.0.0"
+  }
+}

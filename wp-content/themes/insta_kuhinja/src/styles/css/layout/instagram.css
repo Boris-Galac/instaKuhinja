@@ -1,0 +1,14 @@
+/* on front page */
+
+.instagram-feed {
+  position: relative;
+  background: linear-gradient(140deg, hsl(18, 75%, 49%), hsl(266, 63%, 49%));
+  isolation: isolate;
+}
+.instagram-feed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.455);
+  z-index: -1;
+}

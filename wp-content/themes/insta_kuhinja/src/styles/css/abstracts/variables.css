@@ -1,0 +1,53 @@
+:root {
+  --d-flex: flex;
+  --d-grid: grid;
+  --center: center;
+  --gap-1: 1rem;
+  --measure-1: 1rem;
+  --light-border: 1px solid hsla(0, 0%, 100%, 0.335);
+  --time-transition: 0.3s;
+  --light-color: hsl(0, 0%, 100%);
+  --dark-color: hsl(0, 0%, 0%);
+  --attr-color: hsl(0, 0%, 100%);
+  --light-color-alt: hsl(227, 23%, 85%);
+  --overlay-color: hsla(0, 0%, 0%, 0.7);
+  --input-color: hsla(0, 0%, 0%);
+  --primary-background-color: #131417;
+  --secondary-background-color: #252830;
+  --newsletter-color: hsl(225, 10%, 10%);
+  --hover-light-color: var(--light-color);
+  --archives-color: hsl(207, 16%, 18%);
+  --socials-color: hsl(0, 0%, 0%);
+  --hover-dark-color: var(--primary-background-color);
+  --blog-section: linear-gradient(
+    116deg,
+    hsl(240deg 19% 13%),
+    hsl(215, 61%, 62%)
+  );
+  --archive-section: linear-gradient(
+    116deg,
+    rgb(46, 49, 72),
+    hsl(213, 7%, 67%)
+  );
+  --gradient-color: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  --transparent-light-color: rgba(255, 255, 255, 0.05);
+  --transparent-dark-color: rgba(0, 0, 0, 0.75);
+  --font-family: "Poppins", sans-serif;
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
+}

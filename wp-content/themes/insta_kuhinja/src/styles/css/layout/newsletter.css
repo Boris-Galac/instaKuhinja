@@ -1,0 +1,42 @@
+/* Newsletter */
+.newsletter {
+  padding-block: 4rem;
+  background-color: var(--newsletter-color);
+}
+section.newsletter {
+  margin-bottom: 0;
+}
+.newsletter-title {
+  font-size: var(--font-size-lg);
+}
+
+.newsletter-description {
+  margin-bottom: 3rem;
+}
+
+.newsletter .wpcf7-form {
+  display: grid;
+  place-items: center;
+  gap: 0;
+}
+.newsletter .wpcf7-submit {
+  width: max-content;
+  padding: 0.5rem;
+}
+.newsletter .wpcf7-form input {
+  padding: 1rem;
+}
+.newsletter .wpcf7-email {
+  width: 14rem;
+}
+/* .form-wrapper-newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.wpcf7-not-valid-tip {
+  display: none;
+}
+.newsletter .wpcf7-form-control-wrap {
+  width: max-content;
+}

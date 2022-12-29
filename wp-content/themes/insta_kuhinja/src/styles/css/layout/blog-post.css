@@ -1,0 +1,144 @@
+.blog-feed {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.inner-blog-wrapper {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 1rem;
+}
+
+/* first blog in feed */
+
+.blog-feed .article:first-child {
+  grid-column: span 2;
+}
+.blog-feed .article:first-child .blogpost__thumbnail {
+  max-height: 40rem;
+  aspect-ratio: unset;
+  height: 25rem;
+}
+.blog-feed .article:first-child .blogpost__thumbnail img {
+  width: 100vmax;
+}
+/* Blog post */
+.blog-post {
+  padding-bottom: 5rem;
+}
+.blogpost {
+  display: grid;
+  background-color: var(--secondary-background-color);
+}
+.blogpost p {
+  font-weight: 500;
+}
+.blogpost__border {
+  width: 95%;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.252);
+  margin-inline: auto;
+}
+.blogpost__thumbnail {
+  aspect-ratio: 2.3/4;
+  overflow: hidden;
+}
+.blogpost__thumbnail > img {
+  width: 100vmax;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.blogpost__thumbnail > img:hover {
+  scale: 1.2;
+}
+.blogpost h2 {
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+.blogpost__footer {
+  padding: 1.5rem;
+  font-weight: 300;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.blog-post-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* text-align: center; */
+  padding-bottom: 2.5rem;
+}
+.blog-post-title {
+  font-size: clamp(3rem, 5vw, 6rem);
+  padding-bottom: 2rem;
+}
+.blog-post-data .article-data {
+  margin-bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blog-post-data img {
+  width: 100%;
+  /* height: var(--item-min-height-sm); */
+  object-fit: cover;
+  object-position: center 10%;
+}
+.blog-post-container .container {
+  max-width: 90rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+@media (min-width: 960px) {
+  main .container {
+    width: 70rem;
+  }
+}
+.quote {
+  background-color: var(--secondary-background-color);
+  padding: 2.5rem;
+}
+.quote p {
+  font-style: italic;
+}
+.quote span {
+  font-size: 5rem;
+}
+.author {
+  background-color: var(--secondary-background-color);
+}
+.author-image-box {
+  position: relative;
+  height: var(--item-min-height-sm);
+}
+.author-about {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.author-name {
+  color: var(--light-color);
+  font-weight: 400;
+}
+.author-about p {
+  max-width: 50rem;
+  margin-bottom: 1rem;
+}
+.author-about .social-media {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.index-category {
+  background-color: var(--primary-background-color);
+  border-radius: 100vmax;
+  padding-inline: 4px;
+  width: max-content;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
