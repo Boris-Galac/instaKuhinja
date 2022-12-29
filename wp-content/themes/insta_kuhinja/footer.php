@@ -65,7 +65,7 @@
                         <a href="tel:+385919034490" class="list-link"><i class="ri-smartphone-fill"></i></i></a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link"><i class="ri-pinterest-line"></i></a>
+                        <a href="https://www.pinterest.com/dragana006/" class="list-link"><i class="ri-pinterest-line"></i></a>
                     </li>
                 </ul>
                 <span class="copyright-notice">&copy;<?php echo date('Y'); ?>
