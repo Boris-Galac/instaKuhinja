@@ -3,7 +3,7 @@
         <div class="article-data">
             <div>
                 <span class="article-data-tag">
-                    <? the_time('F j, Y') ?>
+                    <?php the_time('F j, Y') ?>
                 </span>
                 <span class="article-data-spacer"></span>
                 <span class="article-data-tag"><?php the_category() ?></span>
