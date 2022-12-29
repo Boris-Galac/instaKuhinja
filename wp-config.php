@@ -78,8 +78,6 @@ define( 'WP_DEBUG', false );
 define('FORCE_SSL_ADMIN', true);
 /* Add any custom values between this line and the "stop editing" line. */
 
-
-
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
