@@ -10,7 +10,6 @@
     })(window,document,'script','dataLayer','GTM-KTLS9W8');</script>
     <!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo('charset') ?>">
-    <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <meta name="description" content="Ovo je moj website/blog na kojem možete, nadam se, zadovoljiti svoje gurmanske odnosno kulinarske afinitete.">
     <meta name="google-site-verification" content="3DKrsbCUcm8dm9sLYAJMZ4tNRso7aVi2clbVBoalNGM" />
