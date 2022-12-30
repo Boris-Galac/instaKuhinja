@@ -87,3 +87,5 @@ function ( $exclude_filters ) {
   $exclude_filters[] = 'insta_kuhinja/node_modules';
   return $exclude_filters;
 } );
+
+add_filter( 'big_image_size_threshold', '__return_false' );
