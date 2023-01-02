@@ -42,7 +42,7 @@
                         <a href="<?php echo site_url('contact') ?>" class="list-link  <?php if(is_home()) echo 'curent';  ?>">Kontakt</a>
                     </li>
                     <li class="list-item">
-                        <a href="<?php echo site_url('about') ?>" class="list-link  <?php if(is_page('about')) echo 'current';  ?>">O Dragici</a>
+                        <a href="<?php echo site_url('about') ?>" class="list-link  <?php if(is_page('about')) echo 'current';  ?>">O meni</a>
                     </li>
                     <li class="list-item screen-lg-hidden">
                         <a href="#" class="list-link">Sign in</a>
