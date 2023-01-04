@@ -31,7 +31,7 @@
                 <h2 class="footer-title">Web linkovi</h2>
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="<?php echo site_url() ?>" class="list-link">Nasovna</a>
+                        <a href="<?php echo site_url() ?>" class="list-link">Naslovna</a>
                     </li>
                     <li class="list-item">
                         <a href="<?php echo site_url('/blog') ?>" class="list-link">Blog</a>
