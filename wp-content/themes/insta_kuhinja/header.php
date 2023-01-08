@@ -64,7 +64,7 @@
                     <i class="ri-menu-3-line open-menu-icon"></i>
                     <i class="ri-close-line close-menu-icon"></i>
                 </button>
-                <a href="#" class="list-link screen-sm-hidden">Sign iinn</a>
+                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
                 <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
                     <span>Sign up</span>
                 </a>
