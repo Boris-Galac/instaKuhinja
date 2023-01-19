@@ -144,7 +144,7 @@ if (document.body.classList.contains("home")) {
   }
 
   const auto = true;
-  const intervalTime = 5000;
+  const intervalTime = 4000;
   let slideInterval;
 
   const nextSlide = () => {
