@@ -85,7 +85,7 @@
   background-color: hsl(120, 43%, 40%);
   cursor: pointer;
 }
-.wpcf7-form-control input[type="submit"] {
+.wpcf7 input[type="submit"] {
   position: relative;
   background-color: hsl(120, 43%, 36%);
   padding: 0.8rem !important;
@@ -94,10 +94,10 @@
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 2px;
-}
-.wpcf7-form-control input[type="submit"]:hover {
-  background-color: hsl(120, 43%, 40%);
   cursor: pointer;
+}
+.wpcf7 input[type="submit"]:hover {
+  background-color: hsl(120, 43%, 45%);
 }
 /* personal info */
 .personal-info {

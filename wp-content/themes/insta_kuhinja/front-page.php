@@ -34,10 +34,10 @@
                     <img src="<?php echo get_theme_file_uri('./src/styles/images/category/smoothie.jpg') ?>" alt="smoothie"
                         class="article-image">
                 </a>
-                <a href="<?php echo site_url('category/tips-and-tricks'); ?>" class="article">
-                    <span class="tag-name">#Tips & Tricks</span>
-                    <img src="<?php echo get_theme_file_uri('./src/styles/images/category/tips.jpg') ?>"
-                        alt="tips and tricks" class="article-image">
+                <a href="<?php echo site_url('category/review'); ?>" class="article">
+                    <span class="tag-name">#Recenzije</span>
+                    <img src="<?php echo get_theme_file_uri('./src/styles/images/category/review.jpg') ?>"
+                        alt="review" class="article-image">
                 </a>
             </div>
         </div>
@@ -53,8 +53,9 @@
                     <!-- wp query loop -->
                     <?php
                     $the_query = new WP_Query(array(
-                        'post_type'=>'post',
-                        'posts_per_page'=> 4
+                        'posts_per_page' => 5, // Number of posts to display
+                        'orderby' => 'date', // Order by post date
+                        'order' => 'DESC', // Display newest posts first
                     ));
                     if($the_query->have_posts()){
                      while($the_query->have_posts()){
