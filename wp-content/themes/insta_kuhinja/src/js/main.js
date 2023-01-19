@@ -77,46 +77,9 @@ themeToggleBtn.addEventListener("click", (e) => {
   }
 });
 
-// Swiper
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    700: {
-      slidesPerView: 2,
-    },
-    1200: {
-      slidesPerView: 3,
-    },
-  },
-});
-var swiperAuto = new Swiper(".mySwiper", {
-  spaceBetween: 0,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 // scroll padding top
 
-const xy = document.querySelector(".navbar").offsetHeight;
+const xy = document.querySelector(".header").offsetHeight;
 // const documentEl = document.documentElement.style.setProperty(
 // 	'--top-padding',
 // 	xy + 'px'
@@ -153,3 +116,58 @@ window.addEventListener("mousemove", (e) => {
     socialsNav.classList.remove("active");
   }
 });
+
+//////////  IMAGE CAROUSEL
+
+if (document.body.classList.contains("home")) {
+  const carouselSlider = document.querySelector(".hero__slider");
+  const images = document.querySelectorAll(".hero-slider__slide");
+  const leftArrow = document.querySelector(".hero-slider-button-prev");
+  const rightArrow = document.querySelector(".hero-slider-button-next");
+  if (rightArrow) {
+    rightArrow.addEventListener("click", () => {
+      nextSlide();
+      if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+      }
+    });
+  }
+  if (leftArrow) {
+    leftArrow.addEventListener("click", () => {
+      prevSlide();
+      if (auto) {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(prevSlide, intervalTime);
+      }
+    });
+  }
+
+  const auto = true;
+  const intervalTime = 5000;
+  let slideInterval;
+
+  const nextSlide = () => {
+    const current = document.querySelector(".current");
+    current.classList.remove("current");
+    if (current.nextElementSibling) {
+      current.nextElementSibling.classList.add("current");
+    } else {
+      images[0].classList.add("current");
+    }
+  };
+
+  const prevSlide = () => {
+    const current = document.querySelector(".current");
+    current.classList.remove("current");
+    if (current.previousElementSibling) {
+      current.previousElementSibling.classList.add("current");
+    } else {
+      images[images.length - 1].classList.add("current");
+    }
+  };
+
+  if (auto) {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+}

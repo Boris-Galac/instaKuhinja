@@ -6,6 +6,13 @@
   grid-template-columns: 1fr;
   gap: 2rem;
 }
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /* flex-direction: column; */
+  /* background-color: rgb(116, 88, 88); */
+}
 
 /* contact form */
 
@@ -47,7 +54,7 @@
   width: 100%;
   transition: 0.2s;
 }
-.form-textarea {
+.contact-container textarea {
   width: 100%;
   padding: 1rem;
   color: black;
@@ -75,6 +82,20 @@
   border-radius: 2px;
 }
 .submit-form-btn:hover {
+  background-color: hsl(120, 43%, 40%);
+  cursor: pointer;
+}
+.wpcf7-form-control input[type="submit"] {
+  position: relative;
+  background-color: hsl(120, 43%, 36%);
+  padding: 0.8rem !important;
+  transition: 0.2s;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.wpcf7-form-control input[type="submit"]:hover {
   background-color: hsl(120, 43%, 40%);
   cursor: pointer;
 }
@@ -111,6 +132,7 @@
 }
 .contact-msg {
   position: relative;
+  padding-bottom: 2rem;
 }
 .contact-msg::after {
   content: "";

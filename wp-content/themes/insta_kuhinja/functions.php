@@ -2,11 +2,9 @@
 
 // loading sources files
 function insta_files(){
-    wp_enqueue_script('swiper-js', get_theme_file_uri('./src/js/swiper-bundle.min.js'), array(), false, true);
     wp_enqueue_style('icon-remix', '//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
-    wp_enqueue_style('swiper_styles', get_theme_file_uri('/src/styles/css/utilities/swiper-bundle.min.css'));
     wp_enqueue_script('main-js', get_theme_file_uri('src/js/main.js'), array(), false, true);
-    wp_enqueue_style('main_css', get_theme_file_uri('dist/style.css'));
+    wp_enqueue_style('main_css', get_theme_file_uri('src/styles/css/style.css'));
 }
 
 add_action('wp_enqueue_scripts', 'insta_files');

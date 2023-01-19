@@ -9,6 +9,7 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KTLS9W8');</script>
     <!-- End Google Tag Manager -->
+    <link rel="icon" href="https://www.insta-kuhinja.com/favicon.ico" type="image/x-icon">
     <meta charset="<?php bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <meta name="description" content="Ovo je moj website/blog na kojem možete, nadam se, zadovoljiti svoje gurmanske odnosno kulinarske afinitete.">

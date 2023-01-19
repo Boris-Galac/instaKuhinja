@@ -82,7 +82,6 @@
 
 .blog-post-data img {
   width: 100%;
-  /* height: var(--item-min-height-sm); */
   object-fit: cover;
   object-position: center 10%;
 }

@@ -133,6 +133,7 @@
   color: var(--light-color);
   text-align: left;
   text-transform: uppercase;
+  font-size: clamp(0.7rem, 3.3vw, 1rem);
 }
 .article__frame .blogpost__thumbnail {
   aspect-ratio: 3/4;
