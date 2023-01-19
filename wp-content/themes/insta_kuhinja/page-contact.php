@@ -19,10 +19,10 @@
                         <a class="link" href="https://www.instagram.com/insta_kuhinja/">https://www.instagram.com/insta_kuhinja/</a>      
                     </div>
                         <div class="personal-info-social facebook"><a href="https://www.facebook.com/instakuhinja" target="_blank"><img src="<?php echo get_theme_file_uri('src/styles/images/instagram.svg') ?>" alt="facebook" title="facebook"></a>
-                        <a class="link" href="https://www.instagram.com/insta_kuhinja/">https://www.facebook.com/instakuhinja</a>   
+                        <a class="link" target="_blank" href="https://www.facebook.com/instakuhinja">https://www.facebook.com/instakuhinja</a>   
                     </div>
                      <div class="personal-info-social gmail"><a href="mailto:dragana006@gmail.com"><img src="<?php echo get_theme_file_uri('src/styles/images/gmail.svg') ?>" alt="gmail" title="gmail"></a>
-                     <a class="link" href="https://www.instagram.com/insta_kuhinja/">dragana006@gmail.com</a>   
+                     <a class="link" target="_blank" href="mailto:dragana006@gmail.com">dragana006@gmail.com</a>   
                     </div>
                     </div>
                 </div>

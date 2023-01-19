@@ -20,10 +20,10 @@
                         <a href="<?php echo site_url('/category/smoothie')?>" class="list-link">Smoothie</a>
                     </li>
                     <li class="list-item">
-                        <a href="<?php echo site_url('/category/snacks')?>" class="list-link">Snacks</a>
+                        <a href="<?php echo site_url('/category/tjestenine')?>" class="list-link">Tjestenine</a>
                     </li>
                     <li class="list-item">
-                        <a href="<?php echo site_url('/category/tips-and-tricks')?>" class="list-link">Tips & Tricks</a>
+                        <a href="<?php echo site_url('/category/review')?>" class="list-link">Recenzije</a>
                     </li>
                 </ul>
             </div>
