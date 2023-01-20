@@ -65,3 +65,11 @@ body.light-theme {
 .socials.active {
   transform: translateY(-50%) translateX(0px);
 }
+
+/* progress scroll tracker */
+
+.indicator-scroll-line {
+  border: 2px solid rgb(64, 203, 64);
+  box-shadow: 0 0 10px 2px rgba(50, 205, 50, 0.773);
+  width: 100%;
+}

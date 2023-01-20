@@ -80,10 +80,7 @@ themeToggleBtn.addEventListener("click", (e) => {
 // scroll padding top
 
 const xy = document.querySelector(".header").offsetHeight;
-// const documentEl = document.documentElement.style.setProperty(
-// 	'--top-padding',
-// 	xy + 'px'
-// );
+
 const mainPaddingTop = (document.querySelector("main").style = `
 	padding-top: ${xy}px;
 `);
@@ -96,9 +93,21 @@ window.addEventListener("scroll", (e) => {
   if (window.scrollY > 50) {
     backToTop.classList.add("active");
   } else backToTop.classList.remove("active");
+
+  /// progress indicator line
+
+  let winScroll = window.scrollY; /// 0 - 1519
+  let height = document.body.scrollHeight - innerHeight; /// 2806 - 1287
+
+  let scrolled = Math.ceil((winScroll / height) * 100);
+  let indicatorLine = document.querySelector(".indicator-scroll-line");
+  indicatorLine.style = `
+    width: ${scrolled}%;
+  `;
 });
+
 backToTop.addEventListener("click", (e) => {
-  scroll({
+  window.scroll({
     top: 0,
     left: 0,
     behavior: "smooth",
