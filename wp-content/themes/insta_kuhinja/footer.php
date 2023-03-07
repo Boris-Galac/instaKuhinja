@@ -49,7 +49,7 @@
             </div>
             <div>
                 <a href="<?php echo site_url() ?>" class="logo-container">
-                <img src="<?php echo get_theme_file_uri('./src/styles/images/logo/favicon.png') ?>"
+                <img src="<?php echo get_theme_file_uri('./src/styles/images/logo/dark-logo.svg') ?>"
                     alt="logo insta-kuhinja" class="logo-svg">
             </a>
                 </a>

@@ -73,3 +73,42 @@ body.light-theme {
   box-shadow: 0 0 10px 2px rgba(50, 205, 50, 0.773);
   width: 100%;
 }
+
+/* intro msg */
+
+.intro-msg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(225, 10%, 8%);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  text-align: center;
+}
+.intro__welcome-msg {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+.intro__heading {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+.intro__img {
+  max-width: 12rem;
+}
+
+/* Intersection observer */
+
+/* animations */
+
+.hidden {
+  opacity: 0;
+  transition: 2s;
+  transform: translatex(60%);
+}
+.show {
+  opacity: 1;
+  transform: translatex(0);
+}

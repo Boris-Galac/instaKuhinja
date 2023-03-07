@@ -1,4 +1,4 @@
-<div class="article featured-article featured-article-1">
+<div class="article featured-article featured-article-1 hidden">
                 <a href="<?php the_permalink(); ?>">
                     <figure class="blogpost__thumbnail">
                     <?php if(has_post_thumbnail()){ ?>
@@ -18,5 +18,10 @@
                         <h3 class="title article-title"><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                         <p class="article-text"><?php echo wp_strip_all_tags( get_the_content() ); ?></p>
                         <a class="link--continure-reading" href="<?php the_permalink() ?>">Vidi više...</a>
+                            <?php
+                                if(get_field('reading_time')){ ?>
+<div class="reading"><i class="ri-book-open-line"></i><span class="article-reading-time"><?php the_field('reading_time') ?></span></div>
+                                <?php }
+                            ?>
                     </div>
 </div>

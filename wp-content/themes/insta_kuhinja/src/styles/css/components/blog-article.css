@@ -138,6 +138,31 @@
 .article__frame .blogpost__thumbnail {
   aspect-ratio: 3/4;
 }
+.reading {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid rgb(79, 79, 79);
+  border-radius: 100vmax;
+  padding: 0.2rem;
+  padding-inline: 0.4rem;
+  width: max-content;
+  display: none;
+}
+.ri-book-open-line {
+  font-size: 1.2rem;
+}
+.article-reading-time {
+  font-weight: 100;
+}
+@media (min-width: 500px) {
+  .reading {
+    display: flex;
+  }
+}
 /* comments  */
 .comments {
 }

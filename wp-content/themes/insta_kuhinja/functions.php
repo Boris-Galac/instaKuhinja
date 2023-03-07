@@ -3,13 +3,15 @@
 // loading sources files
 function insta_files(){
     wp_enqueue_style('icon-remix', '//cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
-    wp_enqueue_script('main-js', get_theme_file_uri('src/js/main.js'), array(), false, true);
     wp_enqueue_style('main_css', get_theme_file_uri('src/styles/css/style.css'));
+    wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js', array(), '3.11.4', true );
+    wp_enqueue_script('main-js', get_theme_file_uri('src/js/main.js'), array(), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'insta_files');
 
-//// for title browser tab on which site we are
+//// site features 
+
 function blog_features(){
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -34,36 +36,51 @@ function widget_areas_function(){
             'after_title'=>'',
             'before_widget'=>'',
             'after_widget'=>'',
-            'name'=>'Sidebar Widget One',
-            'id'=> 'widget-1',
-            'description'=> 'Sidebar Widget Area'
-        ),
-        register_sidebar(
-            array(
-                'before_title'=>'',
-                'after_title'=>'',
-                'before_widget'=>'',
-                'after_widget'=>'',
-                'name'=>'newsletter',
-                'id'=> 'widget-2',
-                'description'=> 'Newsletter Widget Area'
-            ),
-        ),
-        register_sidebar(
-            array(
-                'before_title'=>'',
-                'after_title'=>'',
-                'before_widget'=>'',
-                'after_widget'=>'',
-                'name'=>'Instagram Feed',
-                'id'=> 'widget-3',
-                'description'=> 'Instagram Feed Carousel'
-            ),
+            'name'=>'Sidebar Categories',
+            'id'=> 'widget-categories',
+            'description'=> 'Sidebar Categories Area'
+        )
+    );
+    
+    register_sidebar(
+        array(
+            'before_title'=>'',
+            'after_title'=>'',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'name'=>'Instagram Feed Page',
+            'id'=> 'widget-insta-page',
+            'description'=> 'Instagram Feed Carousel'
+        )
+    );
+    
+    register_sidebar(
+        array(
+            'before_title'=>'',
+            'after_title'=>'',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'name'=>'Instagram Feed Mini',
+            'id'=> 'widget-insta-mini',
+            'description'=> 'Instagram Feed for home page'
+        )
+    );
+
+    register_sidebar(
+        array(
+            'before_title'=>'',
+            'after_title'=>'',
+            'before_widget'=>'',
+            'after_widget'=>'',
+            'name'=>'Newsletter form',
+            'id'=> 'newsletter-widget',
+            'description'=> 'Newsletter subscription form'
         )
     );
 }
 
 add_action('widgets_init', 'widget_areas_function');
+
 
 /// function for checking if is blog's page
 

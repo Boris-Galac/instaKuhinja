@@ -10,10 +10,19 @@
     })(window,document,'script','dataLayer','GTM-KTLS9W8');</script>
     <!-- End Google Tag Manager -->
     <link rel="icon" href="https://www.insta-kuhinja.com/favicon.ico" type="image/x-icon">
-    <meta charset="<?php bloginfo('charset') ?>">
+  <title><?php bloginfo('name'); ?><?php wp_title('-', true, 'left'); ?></title>
+  <meta charset="<?php bloginfo('charset') ?>">
+  <meta name="title" content="Insta Kuhinja - Personalizirani blog o ukusnim delicijama, hrani, slasticama i svime čime se jedan gurman može zadovoljiti...">
+  <meta name="keywords" content="Hrana, recepti, kolač, slastice, slana jela, delicije, apetit, ukusno, gastro, Dragica">
     <meta name="viewport" content="width=device-width, inital-scale=1">
-    <meta name="description" content="Ovo je moj website/blog na kojem možete, nadam se, zadovoljiti svoje gurmanske odnosno kulinarske afinitete.">
+    <meta name="description" content="Ovo je moj website/blog na kojem možete, nadam se, zadovoljiti svoje gurmanske odnosno kulinarske afinitete. Dobrodošli!">
     <meta name="google-site-verification" content="3DKrsbCUcm8dm9sLYAJMZ4tNRso7aVi2clbVBoalNGM" />
+    <!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://insta-kuhinja.com/">
+<meta property="og:title" content="Insta Kuhinja - Personalizirani blog o ukusnim delicijama, hrani, slasticama i svime čime se jedan gurman može zadovoljiti...">
+<meta property="og:description" content="Ovo je moj website/blog na kojem možete, nadam se, zadovoljiti svoje gurmanske odnosno kulinarske afinitete. Dobrodošli!">
+<meta property="og:image" content="">
     <?php wp_head(); ?>
 </head>
 

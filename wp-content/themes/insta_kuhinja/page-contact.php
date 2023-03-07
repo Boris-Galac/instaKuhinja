@@ -4,7 +4,11 @@
 <main>
     <?php get_template_part('template-parts/content', 'banner'); ?>
     <section class="container contact-container">
-        <?php the_content() ?>
+        <!-- contact form -->
+              <?php 
+                  get_template_part('template-parts/content', 'contact-form') 
+              ?>
+        <!------------------>
         <div class="personal-info">
             <div class="personal-info__avatar">
                 <img src="<?php echo get_theme_file_uri('./src/styles/images/avatar.png') ?>" alt="Dragica">  
@@ -28,6 +32,10 @@
                 </div>
         </div>
     </section>
-    <?php get_template_part('template-parts/content', 'newsletter') ?>              
+    <!-- newsletter form -->
+    <?php  
+        get_template_part('template-parts/content', 'newsletter')             
+    ?>
+    <!--------------------->
 </main>
 <?php get_footer(); ?>

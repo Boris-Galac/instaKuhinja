@@ -76,7 +76,7 @@
                 <section class="instagram-feed">
                     <div class="container">
                         <h2 class="title section-title" data-name="instagram feed">Instagram feed</h2>
-                        <?php dynamic_sidebar('widget-3'); ?>
+                        <?php dynamic_sidebar('widget-insta-mini'); ?>
                     </div>
                 </section>
 
@@ -142,5 +142,13 @@
     </section>
     <?php get_template_part('template-parts/content', 'newsletter') ?>              
 </main>
+<!-- intro splash screen -->
+<div class="intro-msg">
+    <div class="intro__welcome-msg">
+      <h1 class="intro__heading">Dobrodošli na moj website</h1>
+      <img class="intro__img" src="/wp-content/themes/insta_kuhinja/src/styles/images/logo/dark-logo.svg" alt="logo slap">
+      </div>
+</div>
+<!------------------------->
 
 <?php get_footer() ?>

@@ -8,15 +8,11 @@
         <section class="container">
             <div class="featured-articles-container d-grid">
                 <div class="content">
-    
                     <?php the_content() ?>
-    
                 </div>
                 <?php get_sidebar() ?>
             </div>
-            
         </section>
-
     </div>
     <?php get_template_part('template-parts/content', 'newsletter') ?>              
 </main>

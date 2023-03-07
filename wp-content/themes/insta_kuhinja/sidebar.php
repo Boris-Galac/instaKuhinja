@@ -2,7 +2,9 @@
     <?php get_search_form() ?>
     <div class="row">
         <h3 class="title featured-content-title">Kategorije</h3>
-        <?php dynamic_sidebar('widget-1'); ?>
+        <!-- Sidebar widget -->
+        <?php dynamic_sidebar('widget-categories'); ?>
+        <!--------------------->
     </div>
     <div class="sidebar__archive row">
     <h3 class="title featured-content-title">Arhiva</h3>

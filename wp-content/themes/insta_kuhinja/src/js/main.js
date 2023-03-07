@@ -180,3 +180,50 @@ if (document.body.classList.contains("home")) {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 }
+
+///// INTRO WELCOME MSG
+
+document.addEventListener("DOMContentLoaded", (e) => {
+  gsap.to(".intro-msg", {
+    opacity: 0,
+    duration: 1,
+    delay: 2,
+    ease: "power3.out",
+  });
+  setTimeout(() => {
+    document.querySelector(".intro-msg").remove();
+  }, 2600);
+});
+
+gsap.from(".hero-slider", {
+  x: "100%",
+  opacity: 0,
+  duration: 2.5,
+  delay: 2,
+  ease: "power3.out",
+});
+
+gsap.from(".category-tags-container .article", {
+  x: "-100%",
+  opacity: 0,
+  duration: 0.8,
+  stagger: 0.3,
+  delay: 2,
+  ease: "power3.out",
+});
+
+////// REVEAL ON SCROLL
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+    //  else{
+    //    entry.target.classList.remove("show");
+    // }
+  });
+});
+
+const hiddenSections = document.querySelectorAll(".hidden");
+hiddenSections.forEach((el) => observer.observe(el));

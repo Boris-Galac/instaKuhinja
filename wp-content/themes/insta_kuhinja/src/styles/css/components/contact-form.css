@@ -1,0 +1,131 @@
+.contact-form {
+  display: grid;
+  height: max-content;
+  gap: 2rem;
+}
+.contact__form-input {
+  display: grid;
+}
+.contact__form-input input,
+.contact__form-input textarea {
+  border: 1px solid #fff;
+  padding: 0.7rem;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+.contact__form-input input:focus,
+.contact__form-input textarea:focus {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+.contact__form-input label {
+  margin-bottom: 0.5rem;
+}
+.contact__form-input fieldset {
+  display: grid;
+  gap: 2rem;
+}
+
+/* submit custom btn */
+
+.contact-submit-btn {
+  font-family: inherit;
+  font-size: 1.1rem;
+  background: rgb(39, 173, 68);
+  color: #fff;
+  padding: 0.7em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-submit-btn span {
+  display: block;
+  margin-left: 0.7em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-submit-btn svg {
+  display: block;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.contact-submit-btn:hover .svg-wrapper {
+  -webkit-animation: fly-1 0.6s ease-in-out infinite alternate;
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.contact-submit-btn:hover svg {
+  -webkit-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  -ms-transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.contact-submit-btn:hover span {
+  -webkit-transform: translateX(3.5em);
+  -ms-transform: translateX(3.5em);
+  transform: translateX(3.5em);
+}
+
+.contact-submit-btn:active {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  background: rgb(34, 207, 71);
+}
+
+@-webkit-keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+  }
+
+  to {
+    -webkit-transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
+  }
+}
+
+@keyframes fly-1 {
+  from {
+    -webkit-transform: translateY(0.1em);
+    transform: translateY(0.1em);
+  }
+
+  to {
+    -webkit-transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
+  }
+}
+.contact-success,
+.contact-error {
+  padding: 1rem;
+  color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  height: max-content;
+  border: 1px solid white;
+}
+.contact-success {
+  background-color: rgb(64, 131, 72);
+}
+.contact-error {
+  background-color: rgb(148, 74, 44);
+}

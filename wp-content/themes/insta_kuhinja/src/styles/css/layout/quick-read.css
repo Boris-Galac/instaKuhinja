@@ -12,27 +12,10 @@
   position: absolute;
   top: 0.5rem;
   left: 1rem;
+  animation: section-title 6s infinite ease-in-out alternate;
 }
-.article.swiper-slide {
-  /* height: 40rem; */
-}
-
-/* Quick read - Swiper */
-.swiper-wrapper {
-  height: auto;
-}
-.swiper-controls {
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: var(--secondary-background-color);
-}
-.swiper-controls::after {
-  font-size: 1.6rem;
-  color: var(--light-color);
-}
-.swiper-pagination {
-  bottom: 0.5rem !important;
-}
-.swiper-pagination-bullet {
-  background-color: var(--light-color);
+@keyframes section-title {
+  to {
+    transform: translateX(3rem);
+  }
 }

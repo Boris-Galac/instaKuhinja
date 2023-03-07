@@ -98,6 +98,7 @@
   background-color: var(--transparent-light-color);
   padding: 1rem;
   transition: 0.2s;
+  width: max(50%, 20rem);
 }
 .recent-post__body:hover {
   background-color: var(--secondary-background-color);

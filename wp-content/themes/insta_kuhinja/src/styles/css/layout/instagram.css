@@ -12,3 +12,7 @@
   background-color: hsla(0, 0%, 0%, 0.455);
   z-index: -1;
 }
+
+#sb_instagram {
+  border-radius: 1rem;
+}

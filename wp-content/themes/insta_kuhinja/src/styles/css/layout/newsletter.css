@@ -37,6 +37,37 @@ section.newsletter {
 .wpcf7-not-valid-tip {
   display: none;
 }
-.newsletter .wpcf7-form-control-wrap {
+.wpcf7-form-control-wrap {
   width: max-content;
+}
+.wpcf7-form-control {
+  transition: 0.2s;
+}
+.wpcf7-form-control:focus {
+  background-color: black;
+  border: 0;
+  outline: 0;
+}
+
+/* subscribe newsletter form */
+
+.wpcf7#wpcf7-f177-o1 {
+  margin-inline: auto;
+}
+form.wpcf7-form.init {
+  display: flex;
+  border: 1px solid #fafafa;
+  max-width: fit-content;
+}
+.wpcf7-spinner {
+  display: none;
+}
+input.wpcf7-form-control.wpcf7-submit {
+  background: #358c35;
+  border: 1px solid #358c35;
+  cursor: pointer;
+  transition: 0.2s;
+}
+input.wpcf7-form-control.wpcf7-submit:hover {
+  background: #48bc48;
 }
